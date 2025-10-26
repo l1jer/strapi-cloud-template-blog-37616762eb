@@ -4,17 +4,49 @@
   "info": {
     "singularName": "product",
     "pluralName": "products",
-    "displayName": "Product"
+    "displayName": "Product",
+    "description": "Product catalogue with specifications and descriptions"
   },
   "options": {
+    "draftAndPublish": true,
     "comment": ""
   },
+  "pluginOptions": {},
   "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
     "reticle": {
       "type": "text"
     },
-    "Spec": {
-      "type": "json"
+    "specifications": {
+      "type": "component",
+      "repeatable": false,
+      "component": "product.specification"
+    },
+    "descriptions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "product.description-paragraph"
+    },
+    "price": {
+      "type": "decimal",
+      "required": false
+    },
+    "sku": {
+      "type": "string",
+      "required": false
+    },
+    "cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
     }
   }
 }

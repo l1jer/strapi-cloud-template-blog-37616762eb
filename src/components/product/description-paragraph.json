@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_product_description_paragraphs",
+  "info": {
+    "displayName": "Description Paragraph",
+    "icon": "align-left",
+    "description": "A single description paragraph for products"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": false
+    },
+    "content": {
+      "type": "text",
+      "required": true
+    },
+    "order": {
+      "type": "integer",
+      "required": false
+    }
+  }
+}
+

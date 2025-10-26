@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_product_specifications",
+  "info": {
+    "displayName": "Product Specification",
+    "icon": "ruler",
+    "description": "Product dimensions and specifications"
+  },
+  "options": {},
+  "attributes": {
+    "length": {
+      "type": "decimal",
+      "required": false
+    },
+    "width": {
+      "type": "decimal",
+      "required": false
+    },
+    "height": {
+      "type": "decimal",
+      "required": false
+    },
+    "unit": {
+      "type": "enumeration",
+      "enum": ["cm", "mm", "inch", "ft"],
+      "default": "cm",
+      "required": true
+    },
+    "weight": {
+      "type": "decimal",
+      "required": false
+    },
+    "weightUnit": {
+      "type": "enumeration",
+      "enum": ["g", "kg", "lb", "oz"],
+      "default": "kg",
+      "required": false
+    }
+  }
+}
+
